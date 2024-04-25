@@ -1,12 +1,19 @@
 :root{
---write-300: #ffffff;
+--white-300: #ffffff;
 
 --black-300: #212121;
 
 --purple-200: #A369FF;
 --purple-300: #8733FF;
 --purple-500: #5A13B4;
+
+--html: #DB4E26;
+--css: #2862EA;
+--javascript: #E2C431;
+--wordpress: #207196;
+
 }
+
 *{
   font-family: "Montserrat", sans-serif;
 }
@@ -37,7 +44,7 @@ body {
 
 .buttonHeader {
   background-color: var(--purple-500);
-  color: var(--write-300);
+  color: var(--white-300);
   padding: 10px 15px;
   text-decoration: none;
   font-weight: 300;
@@ -57,7 +64,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: non-wrap;
-  margin: 2% 10%;
   gap: 40px;
   
 }
@@ -66,15 +72,15 @@ body {
   width: 750px;
 }
 
-#apresentacao h1{
+.tituloBloco{
   font-size: 2.5rem;
-  color: var(--write-300);
+  color: var(--white-300);
   font-weight: 400;
   margin-bottom: 2px;
 }
 
 #apresentacao p{
-  color: var(--write-300);
+  color: var(--white-300);
   font-size: 1.4rem;
   font-weight: 100;
 }
@@ -82,3 +88,122 @@ body {
 .containerButtons {
   padding-right: 2%;
 }
+
+.marginContainer {
+  margin: 8% 17%
+}
+
+.skillContainer{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.skill{
+  padding: aut10px 48.7px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.skill h3 {
+  color: var(--white-300);
+  text-align: center;
+}
+
+.htmlColorBorder{
+  color: var(--html) ;
+}
+
+.cssColorBorder{
+  color: var(--css);
+}
+
+.javascriptColorBorder{
+  color: var(--javascript);
+}
+
+.wordpressColorBorder{
+  color: var(--wordpress);
+}
+
+.formulariocontato{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:3px solid var(--purple-500);
+    border-radius: 25px;
+    margin: 0 25%;
+    padding: 35px 0;
+    min-height: 250px;
+    gap: 30px; 
+}
+
+.paragrafo{
+  font-size: 1.4rem;
+  color: var(--white-300);
+}
+
+.formulariocontato input{
+  color: var(--white-300);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--white-300);
+    min-width: 260px; 
+    font-size: 1.2rem; 
+
+}
+
+.formulariocontato input::placeholder{
+  color: var(--white-300);
+  font-size: 1.2rem;
+}
+
+.formulariocontato button{
+  border: none;
+}
+
+.formulariocontato textarea{
+  width: 360px;
+    height: 130px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    resize: none;
+    padding: 10px;
+}
+
+footer {
+  background-color: var(--purple-300);
+
+}
+
+footer div {
+  margin: 0 10%;
+  padding: 3% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer img {
+  max-width: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--white);
+ }
+
+ @media (max-width: 767px){
+  .containerButtons{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .button{
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+ }
