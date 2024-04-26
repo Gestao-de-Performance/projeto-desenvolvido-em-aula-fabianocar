@@ -34,7 +34,6 @@ body {
   padding: 0;
   margin: 0 10%;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 .logoSite {
@@ -200,10 +199,54 @@ footer a {
   .containerButtons{
     display: flex;
     flex-direction: column;
+    flex-wrap: non-rap;
   }
   
   .button{
     font-size: 0.9rem;
     margin: 10px 0;
+}
+
+#apresentacao, .skillContainer{
+  flex-wrap: wrap;
+}
+
+.apresentacao img {
+  width: 100%;
+}
+
+.marginContainer{
+  margin: 8% 5%;
+}
+
+.skillContainer{
+  gap: 25px;
+}
+
+.skill{
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 45%;
+  height: 170px;
+}
+
+.skill img{
+  width: 110px;
+}
+
+skill h3 {
+  width: 65%;
+  font-size: 1.1rem;
+  margin-bottom: 0px;
+}
+
+.formulariocontato{
+  margin: 0px;
+}
+
+.formulariocontato textarea{
+  width: 85%;
 }
  }
